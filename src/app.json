@@ -1,0 +1,30 @@
+{
+  "name": "BabyEnglish",
+  "displayName": "宝宝英语短句乐园",
+  "version": "1.0.0",
+  "description": "让3岁幼儿无痛玩学，12个月系统掌握500句高频生活化英文短句",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "ios": {
+    "bundleIdentifier": "com.babyenglish.app",
+    "supportsTablet": false
+  },
+  "android": {
+    "package": "com.babyenglish.app",
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/images/adaptive-icon.png",
+      "backgroundColor": "#FFFFFF"
+    }
+  },
+  "web": {
+    "favicon": "./assets/images/favicon.png"
+  }
+}
