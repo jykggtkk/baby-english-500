@@ -84,6 +84,40 @@ npm run ios
 
 ---
 
+## 构建 APK（无需模拟器）
+
+### 方法一：Android Studio（推荐）
+```bash
+# 1. 打开 Android Studio
+#    首次打开会自动引导下载 Android SDK
+# 2. 点击 "Open an existing project"
+#    选择项目中的 android/ 文件夹
+# 3. 等待 Gradle 同步完成（自动下载依赖）
+# 4. 顶部菜单 → Build → Build Bundle(s) / APK(s)
+#    → Build APK(s)
+# 5. 生成文件位置：
+#    android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+### 方法二：命令行（需先安装 SDK）
+```bash
+# 1. 设置 Android SDK 路径
+export ANDROID_HOME=$HOME/AppData/Local/Android/Sdk
+
+# 2. 构建 debug APK
+cd android && ./gradlew assembleDebug
+
+# 3. APK 位置：
+#    android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+### 安装到手机
+1. 将 APK 文件传到手机（微信/QQ/数据线）
+2. 手机上开启「允许安装未知来源应用」
+3. 点击 APK 文件安装
+
+---
+
 ## 项目结构
 
 ```
