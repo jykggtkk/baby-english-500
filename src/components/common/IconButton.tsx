@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, StyleSheet, ViewStyle, TextStyle, View } from 'react-native';
-import { Icon } from 'react-native-vector-icons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { theme } from '@types';
 
 interface IconButtonProps {
@@ -47,7 +47,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
         { backgroundColor },
         isPressed && styles.pressed,
       ]}>
-        <Icon
+        <Ionicons
           name={name}
           size={size}
           color={disabled ? theme.textSecondary : color}

@@ -1,4 +1,4 @@
-import { Sound } from 'react-native-sound';
+import Sound from 'react-native-sound';
 
 // Sound manager for handling audio playback
 export class SoundManager {

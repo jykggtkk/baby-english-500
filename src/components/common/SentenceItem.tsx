@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native';
-import { Icon } from 'react-native-vector-icons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Sentence, LearningProgress } from '@types';
 import { theme } from '@types';
 
@@ -69,7 +69,7 @@ export const SentenceItem: React.FC<SentenceItemProps> = ({
       style={[styles.container, style]}
     >
       <View style={styles.leftSection}>
-        <Icon
+        <Ionicons
           name={getStatusIcon()}
           size={24}
           color={getStatusColor()}

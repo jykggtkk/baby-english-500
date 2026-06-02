@@ -28,13 +28,20 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@components": ["src/components"],
       "@components/*": ["src/components/*"],
+      "@screens": ["src/screens"],
       "@screens/*": ["src/screens/*"],
+      "@utils": ["src/utils"],
       "@utils/*": ["src/utils/*"],
       "@types": ["src/types/index.ts"],
+      "@navigation": ["src/navigation"],
       "@navigation/*": ["src/navigation/*"],
+      "@assets": ["src/assets"],
       "@assets/*": ["src/assets/*"],
+      "@contexts": ["src/contexts"],
       "@contexts/*": ["src/contexts/*"],
+      "@data": ["src/data"],
       "@data/*": ["src/data/*"]
     }
   },

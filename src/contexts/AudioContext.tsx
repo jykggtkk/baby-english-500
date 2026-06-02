@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect, useCallback } from 'react';
-import { Sound } from 'react-native-sound';
+import Sound from 'react-native-sound';
 
 interface AudioContextType {
   isPlaying: boolean;

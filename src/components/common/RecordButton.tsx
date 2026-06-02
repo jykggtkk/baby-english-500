@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TouchableOpacity, StyleSheet, View, Animated } from 'react-native';
-import { Icon } from 'react-native-vector-icons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { theme } from '@types';
 
 interface RecordButtonProps {
@@ -65,7 +65,7 @@ export const RecordButton: React.FC<RecordButtonProps> = ({
           }
         ]}
       >
-        <Icon
+        <Ionicons
           name="mic"
           size={size * 0.5}
           color={isRecording ? '#FFFFFF' : theme.primary}
